@@ -15,6 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-btn-bg: #efefef;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -50,7 +51,7 @@ body{
 }
 
 section{
-    padding: 5em 2em;
+    padding: 5em;
 }
 
 img {
@@ -133,10 +134,18 @@ h3 { font-size: var(--fs-h3)}
 
 /* Header */
 
-header{
+.header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 500;
+    transition: background-color 250ms ease-in-out;
+}
+.header--scrolled {
+    background-color: var(--clr-dark);
 }
 
 .logo {
@@ -180,14 +189,19 @@ header{
 }
 
 .nav-toggle {
-    padding: .5em;
-    background: transition;
+    padding: calc(.5em + 6px) .5em;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 1em;
     top: 1em;
     z-index: 1000;
+    border-radius: 3px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.nav-toggle:hover {
+    background-color: color-mix(in srgb, var(--clr-btn-bg) 50%, white);
 }
 
 .nav-open .nav{
@@ -230,8 +244,12 @@ header{
     right: 0;
 }
 
-.hamburger::before {top: 6px};
-.hamburger::after {bottom: 6px};
+.hamburger::before {
+    top: 6px;
+}
+.hamburger::after {
+    bottom: 6px;
+}
 
 
 /* Intro Section */
@@ -389,6 +407,7 @@ header{
 .portfolio__img {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    width: 100%;
 }
 
 .portfolio__item:focus {

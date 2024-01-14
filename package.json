@@ -1,0 +1,7 @@
+{
+    "name": "portfolio-website",
+    "scripts": {
+        "start": "npx http-server -p 3000"
+    },
+    "packageManager": "yarn@4.0.2"
+}

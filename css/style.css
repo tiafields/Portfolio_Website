@@ -144,8 +144,10 @@ h3 { font-size: var(--fs-h3)}
     box-sizing: border-box;
     z-index: 500;
     transition: background-color 250ms ease-in-out;
+    align-items: center;
 }
-.header--scrolled {
+.header--scrolled,
+.header--show-bg {
     background-color: var(--clr-dark);
 }
 
@@ -193,9 +195,7 @@ h3 { font-size: var(--fs-h3)}
     padding: calc(.5em + 6px) .5em;
     border: 0;
     cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
+    position: relative;
     z-index: 1000;
     border-radius: 3px;
     transition: background-color 250ms ease-in-out;
@@ -209,9 +209,6 @@ h3 { font-size: var(--fs-h3)}
     transform: translateX(0);
 }
 
-.nav-open .nav-toggle {
-    position: fixed;
-}
 .nav-open .hamburger{
     transform: rotate(.625turn);
 }
@@ -326,11 +323,16 @@ h3 { font-size: var(--fs-h3)}
 
 .services {
     margin-bottom: 4em;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
 }
  
 .service {
     max-width: 500px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    flex-basis: 33%;
+    flex-grow: 1;
 }
 
 @media (min-width: 800px) {
@@ -339,6 +341,7 @@ h3 { font-size: var(--fs-h3)}
         max-width: 1000;
         margin-left: auto; 
         margin-right: auto;
+        flex-direction: row;
     }
     .service + .service {
         margin-left: 2em;
@@ -354,21 +357,6 @@ h3 { font-size: var(--fs-h3)}
     box-shadow: var(--bxshdw);
 }
 @media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    .section__title--about {
-        grid-area: title;
-    
-    }
-
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2; 
@@ -378,13 +366,6 @@ h3 { font-size: var(--fs-h3)}
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-
-    .about-me__img {
-        grid-area: img; 
-        position: relative;
-        z-index: 2;
-    }
-
 }
 
 /* My Work */
@@ -477,7 +458,7 @@ h3 { font-size: var(--fs-h3)}
     box-shadow: var(--bxshdw);
 }
 @media (min-width: 600px) {
-    .portfolio-individual-item {
+    .portfolio-individual-item--grid {
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: 
@@ -487,12 +468,12 @@ h3 { font-size: var(--fs-h3)}
         grid-column-gap: 2em;
     }
 
-    .section__title--portfolio-individual {
+    .portfolio-individual-item--grid .section__title--portfolio-individual {
         grid-area: title;
     
     }
 
-    .section__subtitle--portfolio-individual {
+    .portfolio-individual-item--grid .section__subtitle--portfolio-individual {
         grid-column: 1 / -1;
         grid-row: 2; 
         position: relative;
@@ -502,10 +483,9 @@ h3 { font-size: var(--fs-h3)}
         padding-right: calc(200px + 4em);
     }
 
-    .portfolio-individual__img {
+    .portfolio-individual-item--grid .portfolio-individual__img {
         grid-area: img; 
         position: relative;
         z-index: 2;
     }
-
 }

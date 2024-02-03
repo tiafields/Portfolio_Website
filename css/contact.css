@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* Custom Properties */
+:root {
+    --font-family: 'Poppins';
+    --color-primary: #706dfb;
+}
+
+body{
+    font-family: var(--font-family);
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+} 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-container {
+        flex-direction: row;
+    }
+}
+
+/* Form Styling */
+.contact-right{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+    
+}
+.contact-inputs{
+    width: 600px;
+    height:50px;
+    border:none;
+    outline:none;
+    padding-left:25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 10px;
+    font-family: var(--font-family);
+}
+.contact-right textarea{
+    height: 140px;
+    padding-top:15px;
+    border-radius: 10px;
+}
+.contact-inputs:placeholder{
+    color: #a9a9a9;
+}
+.contact textarea{
+    height: 140px;
+    padding-top:15px;
+    border-radius: 50px;
+}
+.contact-inputs:focus{
+    border: 3px solid #0b06f3;
+}
+.contact-right button {
+    display:flex;
+    align-items:center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px; 
+    border: white; 
+    border-radius: 30px;
+    background:#0b06f3;
+    color: white;
+    font-family: var(--font-family);
+}
+.contact-left-title {
+    font-weight:600;
+    color: #ffffff;
+    font-size:40px;
+    margin-bottom: 5px;
+}
+.contact-left p {
+    color:  oklch(from var(--color-primary) calc(l - 40) c h);
+}

@@ -258,10 +258,12 @@ h3 { font-size: var(--fs-h3)}
 
 .intro__img {
     box-shadow: var(--bxshdw);
+    border-radius: 5px;
 }
 
 .section__subtitle--intro {
     display: inline-block;
+    border-radius: 10px;
 }
 
 @media (min-width: 600px) {

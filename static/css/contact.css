@@ -6,7 +6,11 @@
 /* Custom Properties */
 :root {
     --font-family: 'Poppins';
-    --color-primary: #706dfb;
+    --color-primary: #ffccdc;
+    --color-primary-light: oklch(from var(--color-primary) calc(l - 30) c h);
+    --color-primary-dark: oklch(from var(--color-primary) calc(l - 40) c h);
+    --input-width: 66vw;
+    --input-height: 35px;
 }
 
 body{
@@ -21,16 +25,12 @@ body{
 .contact-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
     gap: 50px;
+    padding: 30px;
 }
 
-@media screen and (min-width: 1280px) {
-    .contact-container {
-        flex-direction: row;
-    }
-}
 
 /* Form Styling */
 .contact-right{
@@ -42,8 +42,8 @@ body{
     
 }
 .contact-inputs{
-    width: 600px;
-    height:50px;
+    width: var(--input-width);
+    height: var(--input-height);
     border:none;
     outline:none;
     padding-left:25px;
@@ -77,16 +77,35 @@ body{
     gap: 10px; 
     border: white; 
     border-radius: 30px;
-    background:#0b06f3;
+    background: var(--color-primary-dark);
     color: white;
     font-family: var(--font-family);
 }
+.contact-left {
+    text-align: center;
+}
 .contact-left-title {
     font-weight:600;
-    color: #ffffff;
+    color: var(--color-primary-light);
     font-size:40px;
     margin-bottom: 5px;
 }
 .contact-left p {
     color:  oklch(from var(--color-primary) calc(l - 40) c h);
+}
+
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 800px) {
+    :root {
+        --input-width: 520px;
+        --input-height: 50px;
+    }
+    .contact-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .contact-left {
+        text-align: initial;
+    }
 }

@@ -34,7 +34,7 @@ const main = async () => {
         fs.writeFileSync(path.join(__dirname, 'static', `${file}.html`), output);
     }
     
-    process.exit(1);
+    process.exit(0);
 };
 
 main();

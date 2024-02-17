@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Link to CSS -->
+    <link rel = "stylesheet" href="/css/contact.css">
+    <!-- Linkt to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <h2 class="contact-left-title">Collaborate and Connect!</h2>
+
+            <p>Reach out and say hi.</p>
+            <p>I can wait to meet you!</p>
+        </div>
+
+        <div class="contact-right">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-right">
+
+                <input type="hidden" name="access_key" value="a2c1924c-2e0e-4d19-be42-3a1e1c49eceb">
+                <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required> 
+                <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+                <input type="text" name="Subject" placeholder="Subject" class="contact-inputs" required> 
+                <textarea name="message" placeholder="Type your message here..." class="contact-inputs" required></textarea>
+                <button type = "submit">Submit</button> 
+            </form>
+        </div>
+       
+    </div>
+  
+</body>
+</html>

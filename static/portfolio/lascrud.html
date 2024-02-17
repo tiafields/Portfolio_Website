@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tia's Portfolio Website</title>
+        <!-- Normalize link -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+            <!-- Font Awsome for icons -->
+            <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <!-- Style.css Link -->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+    <body>
+        <header class="header">
+            <a class="logo" href="/index.html">
+                <img src="/img/icon-stock.png" alt="stock icon for brand logo ">
+            </a>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="/#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="/#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+       
+       <!-- Portfolio Individual Item -->
+
+       <!-- figure out where you want source code to be and git hub symbol -->
+       <section class="portfolio-individual-item" id="portfolio-individual">
+            <h2 class="section__title section__title--portfolio-individual">Lion Around Sewing Inventory Management System in Python</h2>
+            <p class="section__subtitle section__subtitle--portfolio-individual">
+                Role: Full Stack Developer <br>
+                Source Code:
+                <a class = "social-list__link" href="https://github.com/tiafields/LionAroundSewingCRUD">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <br>
+                Check Out the Website: https://lionaroundsewingcrud.onrender.com/
+            </p>
+
+            <div class="portfolio-individual__body">
+                <p>This is a CRUD system for my friend's small business Lion Around Sewing.
+                   This was a collaborative group project for my SDEV 220 class, created with the 
+                   Python Django Framework. </p>  
+
+               <p>This Python application serves as an Inventory Management System for Lion Around Sewing.
+                  This business specializes in making handmade plus plushies, hats, and other fandom based 
+                  products.</p>
+                
+                <p>The inventory management system allows the business owner to add a products to the 
+                    inventory which will direct the user to a form. The form allows the user to type in 
+                    the Product Name, give the Product an ID, assign it a Product Type, Cost, Color, Size, 
+                    and Quantity. After assigning all the attributes of the product you can then add the 
+                    product to the Inventory Management System. If the user wishes to update the system 
+                    they can select the Update button which will take the user back to the form where they 
+                    can make adjustments. If the user wishes to delete a product from the system they can 
+                    select the Delete button to remove the product. </p>
+                
+                <p>My Role: I was responsible for coding most of the back end, the main page framework,
+                     styling, and functionality. </p>
+                
+                
+                </p>
+                <p>
+                    <img src="/img/lasCRUD.png" alt="Lion Around Sewing CRUD photo" class="portfolio-individual__img" >
+                </p>
+            </div>
+        
+        </section>
+
+       
+       <!-- My Work -->
+       <section class="my-work" id="work">
+            <h2 class="section__title section__title--work" >My Work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <div class="portfolio">
+    <a href="/portfolio/southwest.html" class="portfolio__item">
+       <img src="/img/portfolio-07.png" alt="Redesign of Southwest Airlines App" class="portfolio__img">
+   </a>
+
+    <a href="/portfolio/furryfriends.html" class="portfolio__item">
+       <img src="/img/portfolio-08.png" alt="Furry Friends Cover Photo" class="portfolio__img">
+   </a>
+
+    <a href="/portfolio/lascrud.html" class="portfolio__item">
+       <img src="/img/portfolio-09.png" alt="Lion Around Sewing Cover Photo" class="portfolio__img">
+   </a>
+
+    <a href="/portfolio/shoeconverter.html" class="portfolio__item">
+       <img src="/img/portfolio-10.png" alt="Shoe Converter conver photo" class="portfolio__img">
+   </a>
+</div>
+       </section>
+
+       <!-- Footer -->
+       <footer class = "footer" > 
+            <!-- insert an email box? -->
+            <p>Copyright &copy 2024 Tia Fields</p>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class = "social-list__link" href="http:codepen.io">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li> 
+                <li class="social-list__item">
+                    <a class = "social-list__link" href="http:codepen.io">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http:codepen.io">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+       </footer>
+
+       <script src="/js/project.js"></script>
+       
+    </body>
+</html>

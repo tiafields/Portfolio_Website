@@ -16,13 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <!-- Style.css Link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
     <body>
         <header class="header">
-            <a class="logo" href="index.html">
-                <img src="img/icon-stock.png" alt="stock icon for brand logo ">
+            <a class="logo" href="/index.html">
+                <img src="/img/icon-stock.png" alt="stock icon for brand logo ">
             </a>
 
             <button class="nav-toggle" aria-label="toggle navigation">
@@ -31,10 +31,10 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="/#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="/#work" class="nav__link">My Work</a></li>
                 </ul>
             </nav>
         </header>
@@ -70,8 +70,8 @@
                     You can then close this window and clear your entries and start the process again. </p>
             </div>
         
-        <img src="img/shoe-converters.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" > <br>
-        <img src="img/shoe-converter-results.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" >
+        <img src="/img/shoe-converters.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" > <br>
+        <img src="/img/shoe-converter-results.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" >
        </section>
 
        <!-- My Work -->
@@ -79,27 +79,7 @@
             <h2 class="section__title section__title--work" >My Work</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
-            <div class="portfolio">
-                <!-- Portfolio Item 07 -->
-                <a href="portfolio-item-w-southWest.html" class="portfolio__item">
-                   <img src="img/portfolio-07.png" alt="" class="portfolio__img">
-               </a>
-
-                <!-- Portfolio Item 08  -->
-                <a href="portfolio-item-x-furryFriends.html" class="portfolio__item">
-                   <img src="img/portfolio-08.png" alt="" class="portfolio__img">
-               </a>
-
-                <!-- Portfolio Item 09  -->
-                <a href="portfolio-item-y-lasCRUD.html" class="portfolio__item">
-                   <img src="img/portfolio-09.png" alt="Lion Around Sewing Cover Photo" class="portfolio__img">
-               </a>
-
-                <!-- Portfolio Item 10  -->
-                <a href="portfolio-item-z-shoeConverter.html" class="portfolio__item">
-                   <img src="img/portfolio-10.png" alt="Shoe Converter conver photo" class="portfolio__img">
-               </a>
-           </div>
+            <%- include('../partials/portfolio-grid.ejs') %>
        </section>
 
        <!-- Footer -->
@@ -125,7 +105,7 @@
             </ul>
        </footer>
 
-       <script src="js/project.js"></script>
+       <script src="/js/project.js"></script>
        
     </body>
 </html>

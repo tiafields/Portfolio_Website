@@ -14,14 +14,16 @@
 }
 
 body{
-    font-family: var(--font-family);
     background: var(--color-primary);
+} 
+.contact-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-} 
+    min-height: 100vh;
+    font-family: var(--font-family);
+}
 .contact-container{
     display: flex;
     flex-direction: column;
@@ -66,7 +68,7 @@ body{
     border-radius: 50px;
 }
 .contact-inputs:focus{
-    border: 3px solid #0b06f3;
+    border: 3px solid var(--color-primary-light);
 }
 .contact-right button {
     display:flex;
@@ -94,11 +96,14 @@ body{
     color:  oklch(from var(--color-primary) calc(l - 40) c h);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 360px) {
+    .contact-left {
+        text-align: initial;
+    }
 }
 @media screen and (min-width: 800px) {
     :root {
-        --input-width: 520px;
+        --input-width: 480px;
         --input-height: 50px;
     }
     .contact-container {
@@ -107,5 +112,10 @@ body{
     }
     .contact-left {
         text-align: initial;
+    }
+}
+@media screen and (min-width: 1000px) {
+    :root {
+        --input-width: 600px;
     }
 }

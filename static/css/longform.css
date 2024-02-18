@@ -1,0 +1,56 @@
+:root {
+    --longform-width: 800px;
+    --longform-vpad: 2em;
+    --longform-color-text: #6a3e4b;
+    --longform-color-heading: #391304;
+    --longform-color-emph: #bb890c;
+}
+
+.longform {
+    color: var(--longform-color-text);
+}
+.longform h3 {
+    color: var(--longform-color-heading);
+}
+.longform em {
+    color: var(--longform-color-emph);
+}
+
+.longform-content,
+.longform-textblock,
+.longform-imgblock {
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.longform-imgblock {
+    padding: var(--longform-vpad);
+}
+
+.longform-content,
+.longform-textblock {
+    padding: var(--longform-vpad) calc((100vw - var(--longform-width)) / 2);
+}
+
+.longform-textblock {
+    background-color: var(--block-color);
+    color: oklch(from var(--block-color) calc(l - 40) c h);
+}
+
+.longform-imgblock,
+.longform-textblock {
+    align-items: center;
+}
+
+.longform-quote {
+    font-style: italic;
+}
+.longform-quote:before {
+    content: "“";
+}
+.longform-quote:after {
+    content: "”";
+}
+

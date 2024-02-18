@@ -461,6 +461,10 @@ h3 { font-size: var(--fs-h3)}
     margin: 0 auto;
 }
 
+.portfolio-individual-item--no-pad-bot {
+    padding-bottom: 0;
+}
+
 .portfolio-individual__img {
     box-shadow: var(--bxshdw);
 }

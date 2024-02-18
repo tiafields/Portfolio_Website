@@ -4,73 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tia's Portfolio Website</title>
-        <!-- Normalize link -->
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-            <!-- Font Awsome for icons -->
-            <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- Normalize link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Font Awsome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@300;400&family=Quicksand:wght@300;400;500;600&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
 
     <!-- Style.css Link -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/longform.css">
 
 
 </head>
-    <body>
-        <%- include('../partials/header.ejs') %>
 
-       
-       <!-- Portfolio Individual Item -->
-
-       <!-- figure out where you want source ode to be and git hub symbol -->
-       <section class="portfolio-individual-item portfolio-individual-item--grid" id="portfolio-individual">
-            <h2 class="section__title section__title--portfolio-individual">Furry Friends: A Web Application that keeps track of Dog Profiles for House Sitting Gigs</h2>
-            <p class="section__subtitle section__subtitle--portfolio-individual">Role: Full Stack Developer <br>Source Code:</p>
-
-            <div class="portfolio-individual__body">
-                <p>Last year I started working at a dog grooming shop part time where they offer daycare and boarding. Many clients want their 
-                    furry friends to have more attention than the facility can offer. I took this as an opportunity to creat a business card and started dog sitting on the side. 
-                </p>
-
-                <p>I accumulated multiple clients that I could not memorize all the information and details of the dogs. Which is why I decided to create an 
-                    a web application that helps dog sitters keep track of their client's and furry freinds data. </p> 
-                </p>
-                    
-                <p>This applicaiton allows the user to fill out a form with all the information necessary to take care of the dogs. It will then 
-                    add the form to a collection of all the dogs the user has aquired. Listing all the clients you have on a separate page. You can then delete the dogs data afterward.  </p>
-                    
-             
-               
-                <ul class="social-list">
-                    <li class="social-list__item">
-                        <a class = "social-list__link" href="https://github.com/tiafields/Furry-Friends">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li> 
-                   </ul>
-            </div>
-        
-        <img src="/img/shoe-converters.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" > <br>
-        <img src="/img/shoe-converter-results.png" alt="Shoe Conversion Application Image" class="portfolio-individual__img" >
-       </section>
+<body>
+    <%- include('../partials/header.ejs') %>
 
 
-       <!-- My Work -->
-       <section class="my-work" id="work">
-            <h2 class="section__title section__title--work" >My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+    <!-- Portfolio Individual Item -->
 
-            <%- include('../partials/portfolio-grid.ejs') %>
-       </section>
+    <!-- figure out where you want source ode to be and git hub symbol -->
+    <section class="portfolio-individual-item portfolio-individual-item--grid portfolio-individual-item--no-pad-bot"
+        id="portfolio-individual">
+        <h2 class="section__title section__title--portfolio-individual">Furry Friends: A Web Application that keeps
+            track of Dog Profiles for House Sitting Gigs</h2>
+        <p class="section__subtitle section__subtitle--portfolio-individual">Role: Full Stack Developer <br>Source
+            Code:</p>
 
-       <!-- Footer -->
-       <%- include('../partials/footer.ejs') %>
+        <div class="portfolio-individual__body">
+            <p>Last year I started working at a dog grooming shop part time where they offer daycare and boarding.
+                Many clients want their
+                furry friends to have more attention than the facility can offer. I took this as an opportunity to
+                creat a business card and started dog sitting on the side.
+            </p>
 
-       <script src="/js/project.js"></script>
-       
-    </body>
+            <p>I accumulated multiple clients that I could not memorize all the information and details of the dogs.
+                Which is why I decided to create an
+                a web application that helps dog sitters keep track of their client's and furry freinds data. </p>
+            </p>
+
+            <p>This applicaiton allows the user to fill out a form with all the information necessary to take care
+                of the dogs. It will then
+                add the form to a collection of all the dogs the user has aquired. Listing all the clients you have
+                on a separate page. You can then delete the dogs data afterward. </p>
+
+
+
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/tiafields/Furry-Friends">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <img src="/img/shoe-converters.png" alt="Shoe Conversion Application Image"
+            class="portfolio-individual__img"> <br>
+        <img src="/img/shoe-converter-results.png" alt="Shoe Conversion Application Image"
+            class="portfolio-individual__img">
+    </section>
+
+    <!--
+    <div class="longform">
+        <section class="longform-textblock" style="--block-color: #ffccdc">
+            <h3>The Process</h3>
+        </section>
+
+        <section class="longform-content">
+            <h3>Heading</h3>
+            <p>Text text text, and <em>this text</em>, don't forget that.</p>
+            <ul>
+                <li><b>One</b>: something about one</li>
+                <li><b>Two</b>: something about two</li>
+                <li><b>Three</b>: something about three</li>
+            </ul>
+        </section>
+
+        <section class="longform-textblock" style="--block-color: #ffccdc">
+            <span class="longform-quote">Text text text</span>
+        </section>
+
+        <section class="longform-imgblock">
+            <img src="/img/furry-friends-sitemap.jpeg" alt="Furry Friends sitemap" />
+        </section>
+    </div>
+    -->
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <%- include('../partials/portfolio-grid.ejs') %>
+    </section>
+
+    <!-- Footer -->
+    <%- include('../partials/footer.ejs') %>
+
+    <script src="/js/project.js"></script>
+
+</body>
+
 </html>

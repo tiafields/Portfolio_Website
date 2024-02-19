@@ -54,3 +54,19 @@
     content: "”";
 }
 
+.longform-link {
+    padding: .67em 1.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: var(--clr-accent);
+    color: #111;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+.longform-link:hover {
+    background-color: oklch(from var(--clr-accent) calc(l + 5) calc(c + 0.02) h);
+}
+
+.longform-img--medium {
+    max-height: 600px;
+}

@@ -468,6 +468,11 @@ h3 { font-size: var(--fs-h3)}
 .portfolio-individual__img {
     box-shadow: var(--bxshdw);
 }
+.portfolio-individual__img--border {
+    border: 3px solid #3f3f50;
+    border-radius: 6px;
+}
+
 @media (min-width: 600px) {
     .portfolio-individual-item--grid {
         display: grid;

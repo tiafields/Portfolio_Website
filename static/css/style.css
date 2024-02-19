@@ -6,8 +6,8 @@
 
 /* Custom Properties */
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Poppins', 'Source Sans Pro', sans-serif;
+    --ff-secondary:'Poppins', 'Source Code Pro', monospace;
 
     --fw-reg: 300;
     --fw-bold: 900;
@@ -526,4 +526,13 @@ h3 { font-size: var(--fs-h3)}
 
 .pt0 {
     padding-top: 0 !important;
+}
+.mt0 {
+    margin-top: 0;
+}
+.mt1 {
+    margin-top: 0.5rem;
+}
+.mt2 {
+    margin-top: 1rem;
 }

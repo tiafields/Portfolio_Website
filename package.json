@@ -2,12 +2,14 @@
     "name": "portfolio-website",
     "scripts": {
         "build": "node build.js -w",
-        "start": "npx http-server -p 3000 -c-1 static"
+        "serve": "npx http-server -p 3000 -c-1 static",
+        "start": "concurrently \"yarn build\" \"yarn serve\""
     },
     "type": "module",
     "packageManager": "yarn@4.0.2",
     "devDependencies": {
         "chokidar": "^3.6.0",
+        "concurrently": "^8.2.2",
         "ejs": "^3.1.9"
     }
 }

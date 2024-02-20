@@ -1,9 +1,10 @@
 {
     "name": "portfolio-website",
     "scripts": {
-        "build": "node build.js -w",
+        "build": "node build.js",
+        "build:watch": "node build.js -w",
         "serve": "npx http-server -p 3000 -c-1 static",
-        "start": "concurrently \"yarn build\" \"yarn serve\""
+        "start": "concurrently \"yarn build:watch\" \"yarn serve\""
     },
     "type": "module",
     "packageManager": "yarn@4.0.2",

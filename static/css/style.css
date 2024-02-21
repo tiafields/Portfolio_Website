@@ -526,6 +526,10 @@ h3 { font-size: var(--fs-h3)}
     }
 }
 
+.home p {
+    margin: 1rem 0;
+}
+
 .pt0 {
     padding-top: 0 !important;
 }

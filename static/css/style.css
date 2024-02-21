@@ -132,7 +132,7 @@ h3 { font-size: var(--fs-h3)}
 .section__infobox {
     margin: 0; 
     font-size: var(--fs-h3);
-
+    word-wrap: break-word;
 }
 
 .section__infobox--intro,

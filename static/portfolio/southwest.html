@@ -17,6 +17,7 @@
 
     <!-- Style.css Link -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/longform.css">
 
 
 </head>
@@ -45,76 +46,98 @@
        <!-- Portfolio Individual Item -->
 
        <!-- figure out where you want source code to be and git hub symbol -->
-       <section class="portfolio-individual-item" id="portfolio-individual">
+       <section class="portfolio-individual-item portfolio-individual-item--grid portfolio-individual-item--no-pad-bot" id="portfolio-individual">
             <h2 class="section__title section__title--portfolio-individual">Re-Design of the Southwest Airlines Application</h2>
-            <p class="section__infobox section__infobox--portfolio-individual">Role: UX/UI Design <br>Mocks: <a target="_blank" href="https://www.figma.com/file/v1zrD8ugkHw9ZpAxY1FeQ8/Redesign%3A-Southwest-Application?type=design&node-id=0-1&mode=design&t=2m4b3o39Ao0ZAChL-0">Figma</a></a> </p>
+            <p class="section__infobox section__infobox--portfolio-individual">Role: UX / UI Design <br>Mocks: <a target="_blank" href="https://www.figma.com/file/v1zrD8ugkHw9ZpAxY1FeQ8/Redesign%3A-Southwest-Application?type=design&node-id=0-1&mode=design&t=2m4b3o39Ao0ZAChL-0">Figma</a></a> </p>
 
             <div class="portfolio-individual__body">
-                <h3>Discovery</h3>
                 <p>As a frequent flier I am constantly using different flight applications to check the status 
                     of my flights, book flights, check on luggage, etc. Due to the weather, the transportation 
                     of my recent trips has been very chaotic. I have flown Delta, United, Virgin, Southwest, KLM, 
                     and British Airways, the list goes on and on. The one airline application that always gives me issues 
                     is Southwest. I would like to reformat this application by adding new features and rearranging old 
                     features to make the application more user friendly where we do not have to rely on customer service.</p>
-                    
-                     
-                    <h4>Features to be Updated</h4>
-                <p><ol><li>There needs to be an in-app messaging feature. There should be multiple ways to contact 
-                    customer service, not just in person or over the phone. I find that when you are in transit 
-                    sometimes messaging can be a good method of contact.</li>
-                    <li>I would like to rearrange the application to where you can check your reservation, but not check 
-                        in 24 hours beforehand. They have this feature but many times it takes too long to access and 
-                        I find myself grabbing my computer and finding my trip details rather than utilizing the 
-                        application.</li>
-                    <li>This application would also benefit from a luggage tracker. These days many airlines provide 
-                        luggage tracking. As soon as the barcode is scanned you can tell whether or not your luggage 
-                        has made it on the plane. It is not this way with Southwest and I believe adding a luggage tracker 
-                        would put their customers' minds at ease.</li>
-                    <li>This application needs to be able to have users rebook their own flight if their flight is 
-                        canceled. The amount of chaos I went through to rebook my flight could have been avoided if I had 
-                        the option to book it myself instead of waiting in line at the customer service desk. </li>
-                    <li> I also think the layout for advertisements needs to be adjusted. There is a tab for advertisements 
-                        and offers which is essentially the same thing. I think this could be altered for different page content.</li>
-                    </p></ol>
-              
-                    <h3>Define</h3>
-                    <p>After determining the stakeholders and users. I was able to evaluate and define the current user journey. Where I
-                        analyzed the features I wanted to tackle and determine why they needed more attention. I then began working on a
-                         SWOT Analysis where I outlined the <b>Strengths</b> of the current application, defined its <b>Weaknesses</b>,
-                         <b>Opportunities </b>this company could have it added these features, and <b>Threats</b> other companies might 
-                         have on Southwest Airlines. This was outlined in a Competitive Analysis where I compared Delta Airlines 
-                         and Southwest Airlines messaging features and text alerts. Comparing a competitor Airline allowed me to gain 
-                         more perspective on why Southwest needs to improve and cater to its customers. </p>
-
-                    <p>Lastly, I selected my methodology of research and then tested this on my participants. I choose to use  A/B, Multivariate testing. 
-                        This is where I can present layouts and features to the test subject and then they could evaluate which interface they preferred. 
-                        This helped me gather ideas of what the majority prefers and allows me to take into consideration what the users want and need. 
-                        After synthesizing the data I was able to create "How Might We" questions where I can utilize these statements to help me further
-                        understand the user I am designing for. 
-
-                        <h4>How Might We... </h4>
-                            <ol>
-                                <li>How might we enhance the interface of the application to make it more user friendly and efficient?</li>
-                                <li>How might we organize that application where the user can navigate and find what they need in a minimal amount of time?</li>
-                            </ol>
-                    </p>
-
-                    <h3>Develop</h3>
-                    <p>In order to begin developing my application I created various tools to help me empathize with the user. I created several user personas, 
-                        defined a user interface style guide, and generated a mood board for application inspiration. Then began developing my wireframes from there. </p>
-                    
-                    <h3>Delivery</h3>
-                    <p>The final deliverable for my project included a Design Brief Document which includes all the documention for my Redesign of the Southwest
-                        application. It includes a Presentation Slide Show and a Prototype in Figma of the Final Product. 
-                        
-                        Through the process of redesigning this application, it has allowed me to evaluate, test, and modify interfaces. I was able to empathize with the users through research and testing. 
-                        I have gained a deeper understanding of how to develop interfaces through wireframes and  prototypes. 
-                        Lastly, I have improved my knowledge with Figma, which I can't wait to use for my future projects. 
-
             </div>
-       
+
+            <div class="portfolio-individual__video">
+                <video width="280" controls autoplay muted>
+                    <source src="/videos/southwest-stepthrough.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
+
+        <div class="longform mt0 pt0">
+            <section class="longform-textblock longform-textblock--heading" style="--block-color: #ffccdc">
+                <h2>The Process</h2>
+            </section>
+            <section class="longform-content">
+                <h3>Define</h3>
+                <p>In order to accomplish an improved experience, I needed to define what my success criteria looked like. I decided those should be as follows.</p>
+            <p><ol><li>There needs to be an in-app messaging feature. There should be multiple ways to contact 
+                customer service, not just in person or over the phone. I find that when you are in transit 
+                sometimes messaging can be a good method of contact.</li>
+                <li class="mt1">I would like to rearrange the application to where you can check your reservation, but not check 
+                    in 24 hours beforehand. They have this feature but many times it takes too long to access and 
+                    I find myself grabbing my computer and finding my trip details rather than utilizing the 
+                    application.</li>
+                <li class="mt1">This application would also benefit from a luggage tracker. These days many airlines provide 
+                    luggage tracking. As soon as the barcode is scanned you can tell whether or not your luggage 
+                    has made it on the plane. It is not this way with Southwest and I believe adding a luggage tracker 
+                    would put their customers' minds at ease.</li>
+                <li class="mt1">This application needs to be able to have users rebook their own flight if their flight is 
+                    canceled. The amount of chaos I went through to rebook my flight could have been avoided if I had 
+                    the option to book it myself instead of waiting in line at the customer service desk. </li>
+                <li class="mt1"> I also think the layout for advertisements needs to be adjusted. There is a tab for advertisements 
+                    and offers which is essentially the same thing. I think this could be altered for different page content.</li>
+                </p></ol>
+            </section>
+          
+            <section class="longform-content">
+                <h3>Designate</h3>
+                <p>After determining the stakeholders and users. I was able to evaluate and define the current user journey. Where I
+                    analyzed the features I wanted to tackle and determine why they needed more attention. I then began working on a
+                     SWOT Analysis where I outlined the <b>Strengths</b> of the current application, defined its <b>Weaknesses</b>,
+                     <b>Opportunities </b>this company could have it added these features, and <b>Threats</b> other companies might 
+                     have on Southwest Airlines. This was outlined in a Competitive Analysis where I compared Delta Airlines 
+                     and Southwest Airlines messaging features and text alerts. Comparing a competitor Airline allowed me to gain 
+                     more perspective on why Southwest needs to improve and cater to its customers. </p>
+
+                <p>Lastly, I selected my methodology of research and then tested this on my participants. I choose to use  A/B, Multivariate testing. 
+                    This is where I can present layouts and features to the test subject and then they could evaluate which interface they preferred. 
+                    This helped me gather ideas of what the majority prefers and allows me to take into consideration what the users want and need. 
+                    After synthesizing the data I was able to create "How Might We" questions where I can utilize these statements to help me further
+                    understand the user I am designing for. 
+
+                    <h4>How Might We... </h4>
+                        <ol>
+                            <li>How might we enhance the interface of the application to make it more user friendly and efficient?</li>
+                            <li>How might we organize that application where the user can navigate and find what they need in a minimal amount of time?</li>
+                        </ol>
+                </p>
+            </section>
+
+            <section class="longform-imgblock" style="--block-color: #f5f5f5">
+                <img class="longform-img--large" src="/img/southwest-wireframes.png" alt="Figma wireframes for the southwest app.">
+            </section>
+
+            <section class="longform-content">
+                <h3>Develop</h3>
+                <p>In order to begin developing my application I created various tools to help me empathize with the user. I created several user personas, 
+                    defined a user interface style guide, and generated a mood board for application inspiration. Then began developing my wireframes from there. </p>
+                
+            </section>
+
+            <section class="longform-content">
+                <h3>Delivery</h3>
+                <p>The final deliverable for my project included a Design Brief Document which includes all the documention for my Redesign of the Southwest
+                    application. It includes a Presentation Slide Show and a Prototype in Figma of the Final Product. 
+                    
+                    Through the process of redesigning this application, it has allowed me to evaluate, test, and modify interfaces. I was able to empathize with the users through research and testing. 
+                    I have gained a deeper understanding of how to develop interfaces through wireframes and  prototypes. 
+                    Lastly, I have improved my knowledge with Figma, which I can't wait to use for my future projects. </p>
+            </section>
+        </div>
 
        <!-- My Work -->
        <section class="my-work" id="work">

@@ -523,7 +523,8 @@ h3 { font-size: var(--fs-h3)}
         grid-row: 2;
     }
 
-    .portfolio-individual-item--grid .portfolio-individual__img {
+    .portfolio-individual-item--grid .portfolio-individual__img,
+    .portfolio-individual-item--grid .portfolio-individual__video {
         grid-area: img; 
         position: relative;
         z-index: 2;
@@ -538,11 +539,11 @@ h3 { font-size: var(--fs-h3)}
     padding-top: 0 !important;
 }
 .mt0 {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 .mt1 {
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
 }
 .mt2 {
-    margin-top: 1rem;
+    margin-top: 1rem !important;
 }

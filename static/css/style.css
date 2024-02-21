@@ -414,6 +414,14 @@ h3 { font-size: var(--fs-h3)}
     overflow: hidden;
 }
 
+.portfolio__item--pink-bg {
+    background: linear-gradient(135deg, #ffd1e0, hsl(341 100% 99% / 1));
+}
+
+.portfolio__item--dark-bg {
+    background-color: var(--clr-dark);
+}
+
 .portfolio__img {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;

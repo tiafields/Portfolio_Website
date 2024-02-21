@@ -15,9 +15,9 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #ffccdc;/* #ffdbe9; */ /* #16e0bd;  */
+    --clr-accent-light: #ffd7ed;
     --clr-btn-bg: #efefef;
-    --clr-dark-dim: oklch(from var(--clr-dark) calc(l + 25) c h);
-    --clr-dark-dim2: #747474;
+    --clr-dark-dim: #747474;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;

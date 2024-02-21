@@ -43,6 +43,7 @@
 
 .longform-textblock {
     color: oklch(from var(--block-color) calc(l - 40) c h);
+    color: var(--block-color-text);
 }
 
 .longform-imgblock,
@@ -96,7 +97,7 @@
     transition: background-color 0.2s ease-in;
 }
 .longform-link:hover {
-    background-color: oklch(from var(--clr-accent) calc(l + 5) calc(c + 0.02) h);
+    background-color: var(--clr-accent-light);
 }
 
 .longform-img--medium {

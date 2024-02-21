@@ -17,6 +17,7 @@
 
     <!-- Style.css Link -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contact-index.css">
 
 
 </head>
@@ -36,7 +37,7 @@
             <li class="nav__item"><a href="/#services" class="nav__link">What I Do</a></li>
             <li class="nav__item"><a href="/#about" class="nav__link">About Me</a></li>
             <li class="nav__item"><a href="/#work" class="nav__link">My Work</a></li>
-            <li class="nav__item"><a href="/contact.html" class="nav__link">Contact Me</a></li>
+            <li class="nav__item"><a href="/#contact" class="nav__link">Contact Me</a></li>
         </ul>
     </nav>
 </header>
@@ -150,6 +151,29 @@
 </div>
        </section>
 
+       <section class="contact-section" id="contact">
+        <div class="contact-container">
+
+            <div class="contact-left">
+                <h2>Collaborate and Connect!</h2>
+            </div>
+    
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-right">
+                    <div class="contact-form-inputs">
+                        <input type="hidden" name="access_key" value="a2c1924c-2e0e-4d19-be42-3a1e1c49eceb">
+                        <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required> 
+                        <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+                        <input type="text" name="Subject" placeholder="Subject" class="contact-inputs" required> 
+                        <textarea name="message" placeholder="Type your message here..." class="contact-inputs" required></textarea>
+                    </div>
+                    <button type = "submit">Submit</button> 
+                </form>
+            </div>
+           
+        </div>
+    </section>
+
        <!-- Footer -->
        <footer class = "footer" > 
     <!-- insert an email box? -->
@@ -167,7 +191,7 @@
             </a>
         </li>
         <li class="social-list__item">
-            <a class="social-list__link" href="/contact.html">
+            <a class="social-list__link" href="/#contact">
                 <i class="fa-solid fa-envelope"></i>
             </a>
         </li>

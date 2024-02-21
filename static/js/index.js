@@ -3,6 +3,12 @@ const navLinks = document.querySelectorAll('.nav__link');
 const header = document.querySelector('.header');
 const intro = document.querySelector('.intro');
 
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && document.body.classList.contains('nav-open')) {
+        document.body.classList.remove('nav-open');   
+    }
+});
+
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
 });
@@ -10,7 +16,6 @@ navToggle.addEventListener('click', () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         document.body.classList.remove('nav-open');
-
     })
 })
 

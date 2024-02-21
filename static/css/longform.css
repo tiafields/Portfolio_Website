@@ -3,11 +3,13 @@
     --longform-vpad: 2em;
     --longform-color-text: #6a3e4b;
     --longform-color-heading: #391304;
-    --longform-color-emph: #bb890c;
+    --longform-color-emph: #cebc8d;
 }
 
 .longform {
     color: var(--longform-color-text);
+    padding: 2rem;
+    width: 100vw;
 }
 .longform h2 {
     text-align: center;
@@ -23,8 +25,9 @@
 .longform-content,
 .longform-textblock,
 .longform-imgblock {
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
+    background-color: var(--block-color);
 }
 
 .longform-imgblock {
@@ -39,7 +42,6 @@
 }
 
 .longform-textblock {
-    background-color: var(--block-color);
     color: oklch(from var(--block-color) calc(l - 40) c h);
 }
 
@@ -60,6 +62,8 @@
 
 .longform-quote {
     font-style: italic;
+    padding: 1rem;
+    color: var(--longform-color-emph);
 }
 
 .longform-quote:before {
@@ -69,13 +73,25 @@
     content: "”";
 }
 
+.longform-textblock .longform-quote {
+    padding: 0;
+    color: inherit;
+}
+
+.longform-textblock--heading {
+    padding-top: calc(var(--longform-vpad) * 1.5);
+    padding-bottom: calc(var(--longform-vpad) * 1.5);
+    margin-top: calc(var(--longform-vpad) * 1.5);
+    margin-bottom: calc(var(--longform-vpad) * 1);
+}
+
 .longform-link {
     display: inline-block;
     padding: .67em 1.5em;
     border-radius: 8px;
     text-decoration: none;
     background-color: var(--clr-accent);
-    color: #111;
+    color: var(--clr-dark);
     cursor: pointer;
     transition: background-color 0.2s ease-in;
 }
@@ -124,4 +140,16 @@
     transition: all .3s ease-in-out;
     color: var(--clr-dark-dim);
     line-height: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .longform {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .longform {
+        padding: 0;
+    }
 }

@@ -8,7 +8,6 @@
 
 .longform {
     color: var(--longform-color-text);
-    padding: 2rem;
     width: 100vw;
 }
 .longform h2 {
@@ -38,7 +37,7 @@
 
 .longform-content,
 .longform-textblock {
-    padding: var(--longform-vpad) calc((100vw - var(--longform-width)) / 2);
+    padding: var(--longform-vpad) 2rem;
 }
 
 .longform-textblock {
@@ -53,12 +52,12 @@
 
 .longform-content--split {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    flex-direction: column;
+    gap: 20px;
 }
 .longform-content--wide {
-    padding-left: calc((100vw - var(--longform-width)) / 4);
-    padding-right: calc((100vw - var(--longform-width)) / 4);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .longform-quote {
@@ -106,18 +105,21 @@
 .longform-img--large {
     max-height: 900px;
 }
+.longform-video {
+    width: 220px;
+}
 
 .stepper-row {
     display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .stepper-step {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
@@ -143,14 +145,46 @@
     line-height: 1;
 }
 
+
+@media screen and (min-width: 360px) {
+    .longform-video {
+        width: 300px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .longform-video {
+        width: 360px;
+    }
+}
 @media screen and (min-width: 600px) {
-    .longform {
-        padding: 0.5rem;
+    .longform-video {
+        width: 480px;
+    }
+
+    .stepper-row {
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .stepper-step {
+        flex-direction: column;
     }
 }
 
 @media screen and (min-width: 800px) {
-    .longform {
-        padding: 0;
+    .longform-content,
+    .longform-textblock {
+        padding: var(--longform-vpad) calc((100vw - var(--longform-width)) / 2);
+    }
+
+    .longform-content--wide {
+        padding-left: calc((100vw - var(--longform-width)) / 4);
+        padding-right: calc((100vw - var(--longform-width)) / 4);
+    }
+
+    .longform-content--split {
+        flex-direction: row;
+        gap: 50px;
     }
 }
